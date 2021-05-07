@@ -15,7 +15,7 @@ constructor(props){
 }
 
 quebraBiscoito(){
-    let numeroAleatorio = Math.round(Math.random()*3)
+    let numeroAleatorio = Math.floor(Math.random()*this.frases.length)
     this.setState({textoFrase:this.frases[numeroAleatorio]})
     
 }
